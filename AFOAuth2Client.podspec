@@ -10,9 +10,11 @@ Pod::Spec.new do |s|
                  :tag => '0.1.2' }
   s.source_files = 'AFOAuth2Client'
   s.requires_arc = true
+  s.platform = '6.0'
 
-  s.dependency 'AFNetworking', '~>1.3'
+  s.dependency 'AFNetworking', '>= 2.3'
 
+  s.ios.deployment_target = '6.0'
   s.ios.frameworks = 'Security'
 
   s.prefix_header_contents = <<-EOS
